@@ -67,6 +67,14 @@ app.get('/about',(req,res)=>{
 })
 
 
+app.get('/project',(req,res)=>{
+    res.render('project.hbs',{
+      promessage:'projetcs message',
+        
+    })
+})
+
+
 app.get('/bad',(req,res)=>{
     res.send({
         erroreMeassage:'the server  is crashed'
